@@ -1,0 +1,297 @@
+ The Lab web site
+   Master Styles
+   Author: eckart (f6design.com)
+*****************************************************************/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+
+/*estilosespesificos */
+
+html { 
+	overflow-y: scroll; /* always force a scrollbar in non-IE */
+	}
+
+body {
+	background: #000000;
+	overflow-x: hidden;
+	height: 4550px;
+	line-height: 1.5;
+	color: #000;
+	font-size: 14px;
+	font-family: Arial,sans-serif;
+}	
+
+
+h1 {
+	color: #21a97e;
+}
+
+a, a:link,
+a:active,
+a:visited {
+	-webkit-transition: color 0.25s ease-out;
+	-moz-transition: color 0.25s ease-out;
+	-o-transition: color 0.25s ease-out;
+	transition: color 0.25s ease-out;
+	color:#21a97e;
+	outline: none;
+	text-decoration:none;
+	}
+	a:hover { 
+		color:#000;
+		}
+img { 
+	display:block;
+	}
+p {
+	margin:1em 0;
+	}
+
+/* Common shared styles
+*****************************************************************/
+
+hr {
+	margin: 0;
+	border: none;
+	border-top: 1px solid #3b3b3b;
+	border-bottom: 1px solid #3b3b3b;
+	height: 3px;
+}
+
+/* Page structure
+*****************************************************************/
+
+#wrapper {
+	position: relative;
+}
+
+/* Nav
+*****************************************************************/
+
+nav#primary {
+	z-index: 5;
+	position: fixed;
+	top: 50%;
+	right: 16px;
+	margin-top: -40px;
+}
+nav#primary li {
+	position: relative;
+	height: 20px;
+}
+nav#primary a {
+	display: block;
+	width: 20px;
+	height: 20px;
+	text-indent: -9999px;
+	background: transparent url('../images/nav-dot.png') 4px 4px no-repeat;
+}
+nav#primary a:hover, nav#primary a.active {
+	background: transparent url('../images/nav-dot.png') 4px -16px no-repeat;
+}
+nav#primary h1 {
+	position: absolute;
+	right: 22px;
+	top: -7px;
+	display: none;
+	padding: 4px 20px 4px 7px;;
+	color: #fff;
+	white-space: nowrap;
+	background: transparent url('../images/nav-arrow.png') 100% 50% no-repeat;
+	}
+nav.next-prev {
+margin: 20px 0 0 0;
+	}
+	a.prev,
+	a.next {
+		display: block;
+		width: 15px;
+		height: 11px;
+		text-indent: -9999px;
+		}
+	a.prev {
+		margin: 0 auto 5px auto;
+		background: transparent url('../images/scroll-arrow-up.png') 0 0 no-repeat;
+		
+		}
+		a.prev:hover {
+			background: transparent url('../images/scroll-arrow-up.png') 0 -11px no-repeat;
+				}
+	a.next {
+		margin: 5px auto 0 auto;
+		background: transparent url('../images/scroll-arrow-down.png') -1px 0 no-repeat;
+		}
+		a.next:hover {
+			background: transparent url('../images/scroll-arrow-down.png') -1px -11px no-repeat;
+			}		
+
+/*estilos de loa articulos*/
+
+.espacio{
+	height: 200px;
+}
+
+.control{
+	z-index: 5;
+}
+
+#content {
+	position: relative;
+	
+	}
+
+#content article{
+	color:#000000;
+ 	background-color: #ffeb00;
+ }
+
+
+
+#content article:nth-child(even) {
+	color: #ffeb00;
+	background: #000000; 
+} 
+
+#logo{
+	position:absolute;
+ 	top:200px;
+ 	left:20%;
+}
+
+
+#mouse{
+	position:absolute;
+ 	top:400px;
+ 	left:10%;
+}
+
+#moleskin{
+	position:absolute;
+	top :-30px;
+	left: 30%;
+}
+
+#plumon{
+		position: absolute;
+		top:450px;
+		left:60%;
+}
+
+#tabla{
+	position: absolute;
+		top:663px;
+		left:27%;
+		z-index: 1;
+}
+
+#lapiz {
+		position: absolute;
+		top:663px;
+		left:27%;
+}
+
+#tapa{
+	position: absolute;
+	top: 550px;
+	left: 47%;
+}
+
+#lapiz{
+	position:absolute;
+	top :200px;
+	left: 50%;
+}
+
+/*
+
+
+
+#content article:nth-child(odd) {
+	background: black; 
+	border-top: 1px solid #DCDCDC;
+} 
+
+#manned-flight{
+	background-color: 
+}
+
+
+
+
+
+
+
+#cuaderno{
+	position:absolute;
+ 	top:30px;
+ 	left:520px;
+	width: 100px;
+ 	height: 200px;
+ 
+}
+
+.spacer{
+	height: 100px;
+}
+
+
+#lapiz{
+	position:absolute;
+ 	top:300px;
+ 	left:620px;
+	width: 300px;
+ 	height: 100px;
+}
+
+
+#main{
+	height: 500px;
+	background-color: black;
+	color: yellow;
+}
+
+#main p{
+	margin-top: 150px;
+}
+
+#animate1{
+	color: white;
+}
+
+
+footer{
+	height: 500px;
+	background-color: yellow;
+}
