@@ -96,6 +96,21 @@ hr {
 #wrapper {
 	position: relative;
 }
+#branding {
+	width: 100%;
+	background: #fff;
+	}
+	#branding h1 {
+		width: 940px;
+		padding: 10px 15px;
+		margin: 0 auto;
+		text-transform: uppercase;
+		font-size: 18px;
+		font-weight: bold;
+		z-index: 5;
+		position: fixed;
+		}
+
 
 /* Nav
 *****************************************************************/
@@ -286,10 +301,6 @@ margin: 20px 0 0 0;
  	left:45%;
 }
 
-.tre_columnas div{
-	background: white;
-	float: left;
-}
 
 #pantones {
  	background-image:url(../images/ayudamos/disenamos.png) ;
@@ -297,23 +308,51 @@ margin: 20px 0 0 0;
  	float:left;
  	width:308px;
  	height: 250px;
+ 	margin: 0px 15px 0px 0px;
 }
+
+#pantones img{
+	margin: 0px auto;
+}
+
 #lupa {
 	background-image:url(../images/ayudamos/investigamos.png); 
 	background-repeat: no-repeat;
  	float:left;
  	width:308px;
  	height: 250px;
+ 	margin: 0px 15px 0px 15px;
+
 }
+
+#lupa img{
+	margin: 0px auto;
+}
+
 #teclado {
 	background-image:url(../images/ayudamos/desarrollamos.png); 
 	background-repeat: no-repeat;
  	float:left;
- 	width:308px;
+ 	width:410px;
  	height: 250px;
+ 	margin: 0px 0px 0px 15px;
  	
 }
 
+#teclado img{
+	margin: 0px auto;
+}
+/*parte del contacto */
+
+#contacto{
+
+}
+
+#contacto div{
+	float: left;
+	background: white;
+	border:solid black 1px;
+}
 
 /*
 

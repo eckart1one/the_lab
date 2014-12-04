@@ -15,6 +15,11 @@
 	<body>
 <!-- contenedor principal -->
 		<div id="wrapper">
+			<!-- barra de branding o logo -->
+			<header id="branding">
+				<h1>The lab</h1>
+			</header>
+
 <!-- barra de navegacion	 -->
 			<nav id="primary">
 				<ul>
@@ -88,14 +93,15 @@
 					<div class="texto_articulo">
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque repudiandae, iste nisi dolorum exercitationem dolore obcaecati hic velit accusantium, ipsa tempora numquam quo. Quis vero officiis repellendus, facilis officia repellat.
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, ea magni tempora repellendus quod harum labore soluta consectetur dicta dolores suscipit sit, perspiciatis fugiat eaque architecto consequuntur et vitae accusamus.</p>
+						<br><br>	
 						<div class="tre_columnas">
-							<div id="pantones"> <img class="thumb"  src="images/ayudamos/pantone.png"/></div>
-							<div id="lupa">		<img class="thumb"  src="images/ayudamos/lupa.png"/></div>
-							<div id="teclado"> 	<img class="thumb"  src="images/ayudamos/teclado.png"/> </div>
+							<div class="animacion_icono" id="pantones"> <img class="thumb"  src="images/ayudamos/pantone.png"/></div>
+							<div class="animacion_icono" id="lupa">		<img class="thumb"  src="images/ayudamos/lupa.png"/></div>
+							<div class="animacion_icono" id="teclado"> 	<img class="thumb"  src="images/ayudamos/teclado.png"/> </div>
 						</div>
 					</div>
-					
-				
+					<div class="espacio"></div>
+					<div class="espacio_medio"></div>
 					<nav class="next-prev">
 						<a class="prev frameless-parachute" href="#frameless-parachute">Prev</a>
 						<hr />
@@ -107,24 +113,26 @@
 					<header>
 						
 					</header>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto hic, vero! Accusamus quis nostrum distinctio, iure adipisci laborum consectetur repellat odio expedita, voluptatum placeat sapiente sequi aliquam, quo voluptate vero.</p>
+					<div class="texto_articulo">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto hic, vero! Accusamus quis nostrum distinctio, iure adipisci laborum consectetur repellat odio expedita, voluptatum placeat sapiente sequi aliquam, quo voluptate vero.</p>
 
-					<div>
-						<div>
-							<h2>Tels</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis amet, ad officiis, cumque molestiae eius laboriosam. Vero harum esse, sapiente quo magnam enim nam dolores explicabo. Dolorum, iste inventore eos.</p>
-						</div>
-						<div>
-							<h2>Dir</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis amet, ad officiis, cumque molestiae eius laboriosam. Vero harum esse, sapiente quo magnam enim nam dolores explicabo. Dolorum, iste inventore eos.</p>
-						</div>
-						<div>
-							<h2>Mail</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis amet, ad officiis, cumque molestiae eius laboriosam. Vero harum esse, sapiente quo magnam enim nam dolores explicabo. Dolorum, iste inventore eos.</p>
-						</div>
-						<div>
-							<h2>Video</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis amet, ad officiis, cumque molestiae eius laboriosam. Vero harum esse, sapiente quo magnam enim nam dolores explicabo. Dolorum, iste inventore eos.</p>
+						<div id="contacto">
+							<div>
+								<h2>Tels</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis amet, ad officiis, cumque molestiae eius laboriosam. Vero harum esse, sapiente quo magnam enim nam dolores explicabo. Dolorum, iste inventore eos.</p>
+							</div>
+							<div>
+								<h2>Dir</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis amet, ad officiis, cumque molestiae eius laboriosam. Vero harum esse, sapiente quo magnam enim nam dolores explicabo. Dolorum, iste inventore eos.</p>
+							</div>
+							<div>
+								<h2>Mail</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis amet, ad officiis, cumque molestiae eius laboriosam. Vero harum esse, sapiente quo magnam enim nam dolores explicabo. Dolorum, iste inventore eos.</p>
+							</div>
+							<div>
+								<h2>Video</h2>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis amet, ad officiis, cumque molestiae eius laboriosam. Vero harum esse, sapiente quo magnam enim nam dolores explicabo. Dolorum, iste inventore eos.</p>
+							</div>
 						</div>
 					</div>
 					<nav class="next-prev">
@@ -163,24 +171,51 @@
 			</div> -->
 			rigth
 <script type="text/javascript">
+	$(document).ready(function(){
+		$('#primary').hide();
+		$('#branding').hide();
+	});
 	/* Scroll event handler */
     $(window).bind('scroll',function(e){
     	parallaxScroll();
 		// redrawDotNav();
+
     });
 	/* Scroll the background layers */
-function parallaxScroll()
-{
-	var scrolled = $(window).scrollTop();
-	$('#mouse').css('top',(300-(scrolled*.25))+'px');
-	$('#lapiz').css('top',(300-(scrolled*.5))+'px');
-	$('#tapa').css('top',(700-(scrolled*2))+'px');
-	$('#logo').css('top',(180+(scrolled*.35))+'px');
-	$('#brujula').css('left',(1200-(scrolled*.35))+'px');
-	$('#lentes').css('left',(-300+(scrolled*.25))+'px');
-	$('#lapiz_madera').css('left',(-300+(scrolled*.25))+'px');
-	$('#pinza_2').css('left',(-300+(scrolled*.25))+'px');
-	$('#pinza_1').css('left',(-300+(scrolled*.25))+'px');
+	function parallaxScroll()
+	{
+		var scrolled = $(window).scrollTop();
+		$('#mouse').css('top',(300-(scrolled*.25))+'px');
+		$('#lapiz').css('top',(300-(scrolled*.5))+'px');
+		$('#tapa').css('top',(700-(scrolled*2))+'px');
+		$('#logo').css('top',(180+(scrolled*.35))+'px');
+		$('#brujula').css('left',(1200-(scrolled*.35))+'px');
+		$('#lentes').css('left',(-300+(scrolled*.25))+'px');
+		$('#lapiz_madera').css('left',(-300+(scrolled*.25))+'px');
+		$('#pinza_2').css('left',(-300+(scrolled*.25))+'px');
+		$('#pinza_1').css('left',(-300+(scrolled*.25))+'px');
+		if(scrolled>1000){
+			$('#primary').show(500);
+			$('#branding').show(500);
+		}
+		if(scrolled<1000){
+			$('#primary').hide();
+			$('#branding').hide();
+		}
+		// animacion de los iconos de ayudamos
+		$('.animacion_icono').hover(function(){
+			$(this).children().stop(true).animate({
+				'margin-top': -100},500,function(){
+					//fin animacion
+				});
+		},function(){
+			$(this).children().stop(true).animate({
+				'margin-top': 0
+			},500,function(){
+				//fin de la animacion
+			});
+		});
+
 }
 
 
