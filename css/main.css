@@ -104,7 +104,7 @@ nav#primary {
 	z-index: 5;
 	position: fixed;
 	top: 50%;
-	right: 16px;
+	left: 16px;
 	margin-top: -40px;
 }
 nav#primary li {
@@ -233,6 +233,87 @@ margin: 20px 0 0 0;
 	top :200px;
 	left: 50%;
 }
+
+#porque{
+	position:absolute;
+ 	top:1100px;
+ 	left:20%;
+}
+
+#brujula{
+	position:absolute;
+ 	top:1150px;
+ 	left:60%;
+}
+
+#lentes{
+	position:absolute;
+ 	top:1200px;
+ 	left:8%;
+}
+
+
+.texto_articulo{
+	margin-left: 70px;
+    margin-right: 70px;
+}
+
+.espacio_medio{
+	height: 100px;
+}
+
+#ayudamos{
+	position:absolute;
+ 	top:2100px;
+ 	left:20%;
+}
+
+#pinza_1{
+	position:absolute;
+ 	top:2250px;
+ 	left:20%;
+}
+
+#pinza_2{
+	position:absolute;
+ 	top:2350px;
+ 	left:15%;
+}
+
+#lapiz_madera{
+	position:absolute;
+ 	top:2100px;
+ 	left:45%;
+}
+
+.tre_columnas div{
+	background: white;
+	float: left;
+}
+
+#pantones {
+ 	background-image:url(../images/ayudamos/disenamos.png) ;
+ 	background-repeat: no-repeat;  
+ 	float:left;
+ 	width:308px;
+ 	height: 250px;
+}
+#lupa {
+	background-image:url(../images/ayudamos/investigamos.png); 
+	background-repeat: no-repeat;
+ 	float:left;
+ 	width:308px;
+ 	height: 250px;
+}
+#teclado {
+	background-image:url(../images/ayudamos/desarrollamos.png); 
+	background-repeat: no-repeat;
+ 	float:left;
+ 	width:308px;
+ 	height: 250px;
+ 	
+}
+
 
 /*
 

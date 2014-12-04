@@ -62,7 +62,14 @@
 						<div class="espacio"></div>
 						<div class="espacio"></div>
 					</header>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum provident delectus nesciunt possimus at quisquam rerum beatae quae necessitatibus dolorem ab reiciendis consequatur molestiae unde perspiciatis nihil, iusto neque nisi.</p>
+					<div class="texto_articulo">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum provident delectus nesciunt possimus at quisquam rerum beatae quae necessitatibus dolorem ab reiciendis consequatur molestiae unde perspiciatis nihil, iusto neque nisi.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum provident delectus nesciunt possimus at quisquam rerum beatae quae necessitatibus dolorem ab reiciendis consequatur molestiae unde perspiciatis nihil, iusto neque nisi.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum provident delectus nesciunt possimus at quisquam rerum beatae quae necessitatibus dolorem ab reiciendis consequatur molestiae unde perspiciatis nihil, iusto neque nisi.
+						<br><br>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum provident delectus nesciunt possimus at quisquam rerum beatae quae necessitatibus dolorem ab reiciendis consequatur molestiae unde perspiciatis nihil, iusto neque nisi.
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum provident delectus nesciunt possimus at quisquam rerum beatae quae necessitatibus dolorem ab reiciendis consequatur molestiae unde perspiciatis nihil, iusto neque nisi.
+						</p>
+					</div>
+				
 					<div class="espacio"></div>
 					<nav class="next-prev">
 						<a class="prev manned-flight" href="#manned-flight">Prev</a>
@@ -73,11 +80,21 @@
 <!-- articulo como ayudamos -->
 				<article id="english-channel">
 					<header>
+						<div class="espacio"></div>
+						<div class="espacio"></div>
+						<div class="espacio_medio"></div>
 						
 					</header>
-
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque repudiandae, iste nisi dolorum exercitationem dolore obcaecati hic velit accusantium, ipsa tempora numquam quo. Quis vero officiis repellendus, facilis officia repellat.
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, ea magni tempora repellendus quod harum labore soluta consectetur dicta dolores suscipit sit, perspiciatis fugiat eaque architecto consequuntur et vitae accusamus.</p>
+					<div class="texto_articulo">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque repudiandae, iste nisi dolorum exercitationem dolore obcaecati hic velit accusantium, ipsa tempora numquam quo. Quis vero officiis repellendus, facilis officia repellat.
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, ea magni tempora repellendus quod harum labore soluta consectetur dicta dolores suscipit sit, perspiciatis fugiat eaque architecto consequuntur et vitae accusamus.</p>
+						<div class="tre_columnas">
+							<div id="pantones"> <img class="thumb"  src="images/ayudamos/pantone.png"/></div>
+							<div id="lupa">		<img class="thumb"  src="images/ayudamos/lupa.png"/></div>
+							<div id="teclado"> 	<img class="thumb"  src="images/ayudamos/teclado.png"/> </div>
+						</div>
+					</div>
+					
 				
 					<nav class="next-prev">
 						<a class="prev frameless-parachute" href="#frameless-parachute">Prev</a>
@@ -125,27 +142,26 @@
 				<img class="thumb" id="tabla" src="images/header/tabla.png"/>	
 				<img class="thumb" id="tapa" src="images/header/tapa.png"/>	
 			</div>
-			<!-- <div id="bg2">
-				<img class="thumb" id="tapa" src="images/porque/porque_confiar.png"/>
-				<img class="thumb" id="tapa" src="images/porque/brujula.png"/>
-				<img class="thumb" id="tapa" src="images/porque/lentes.png"/>
+			<div id="bg2">
+				<img class="thumb" id="porque" src="images/porque/porque_confiar.png"/>
+				<img class="thumb" id="brujula" src="images/porque/brujula.png"/>
+				<img class="thumb" id="lentes" src="images/porque/lentes.png"/>
 			</div>
-			<div id="bg3">
-				<img class="thumb" id="tapa" src="images/ayudamos/como_ayudamos.png"/>
-				<img class="thumb" id="tapa" src="images/ayudamos/pinza_1.png"/>
-				<img class="thumb" id="tapa" src="images/ayudamos/pinza_2.png"/>
-				<img class="thumb" id="tapa" src="images/ayudamos/lapiz_madera.png"/>
-				<img class="thumb" id="tapa" src="images/ayudamos/pantone.png"/>
-				<img class="thumb" id="tapa" src="images/ayudamos/lupa.png"/>
-				<img class="thumb" id="tapa" src="images/ayudamos/teclado.png"/>
-				<img class="thumb" id="tapa" src="images/ayudamos/diseñamos.png"/>
+			 <div id="bg3">
+				<img class="thumb" id="ayudamos" src="images/ayudamos/como_ayudamos.png"/>
+				<img class="thumb" id="pinza_1" src="images/ayudamos/pinza_1.png"/>
+				<img class="thumb" id="pinza_2" src="images/ayudamos/pinza_2.png"/>
+				<img class="thumb" id="lapiz_madera" src="images/ayudamos/lapiz_madera.png"/>
+				
+				<!--<img class="thumb" id="tapa" src="images/ayudamos/diseñamos.png"/>
 				<img class="thumb" id="tapa" src="images/ayudamos/investigamos.png"/>
-				<img class="thumb" id="tapa" src="images/ayudamos/desarrollamos.png"/>
+				 <img class="thumb" id="tapa" src="images/ayudamos/desarrollamos.png"/>-->
 			</div>
-			<div id="bg4">
+			<!-- <div id="bg4"> 
 				<img class="thumb" id="tapa" src="images/cuentanos/cuentanos_algo.png"/>
 				<img class="thumb" id="tapa" src="images/cuentanos/sobre.png"/>
 			</div> -->
+			rigth
 <script type="text/javascript">
 	/* Scroll event handler */
     $(window).bind('scroll',function(e){
@@ -153,12 +169,18 @@
 		// redrawDotNav();
     });
 	/* Scroll the background layers */
-function parallaxScroll(){
+function parallaxScroll()
+{
 	var scrolled = $(window).scrollTop();
 	$('#mouse').css('top',(300-(scrolled*.25))+'px');
 	$('#lapiz').css('top',(300-(scrolled*.5))+'px');
 	$('#tapa').css('top',(700-(scrolled*2))+'px');
 	$('#logo').css('top',(180+(scrolled*.35))+'px');
+	$('#brujula').css('left',(1200-(scrolled*.35))+'px');
+	$('#lentes').css('left',(-300+(scrolled*.25))+'px');
+	$('#lapiz_madera').css('left',(-300+(scrolled*.25))+'px');
+	$('#pinza_2').css('left',(-300+(scrolled*.25))+'px');
+	$('#pinza_1').css('left',(-300+(scrolled*.25))+'px');
 }
 
 
