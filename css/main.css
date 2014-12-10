@@ -55,7 +55,8 @@ body {
 
 
 h1 {
-	color: #21a97e;
+	/*color: #21a97e;*/
+	font-size: 30px;
 }
 
 a, a:link,
@@ -342,76 +343,63 @@ margin: 20px 0 0 0;
 #teclado img{
 	margin: 0px auto;
 }
+
+
+
 /*parte del contacto */
 
-#contacto{
-
-}
-
-#contacto div{
+.contacto{
 	float: left;
-	background: white;
-	border:solid black 1px;
+	width: 200px;
+	font-family: 'PT Sans', sans-serif;
+	height: 700;
+	letter-spacing: 1px;
+	margin: 0px 20px 0px 20px
 }
 
-/*
-
-
-
-#content article:nth-child(odd) {
-	background: black; 
-	border-top: 1px solid #DCDCDC;
-} 
-
-#manned-flight{
-	background-color: 
+.titulo{
+margin: 50px auto;
+margin-bottom: 120px;
 }
 
-
-
-
-
-
-
-#cuaderno{
+#sobre{
 	position:absolute;
- 	top:30px;
- 	left:520px;
-	width: 100px;
- 	height: 200px;
- 
+ 	top:3200px;
+ 	left:25%;
 }
 
-.spacer{
-	height: 100px;
-}
-
-
-#lapiz{
-	position:absolute;
- 	top:300px;
- 	left:620px;
+/*boton portafolio*/
+#portafolio{
+	height: 300px;
 	width: 300px;
- 	height: 100px;
+	position: absolute;
+	top: 1330px;
+	right: -120px;
+
+
+  	background: yellow;
+   border-radius: 150px;
+  -moz-border-radius: 150px;
+  -webkit-border-radius: 150px;
+  color: #ffffff;
+  display: inline-block;
+  font-weight: bold;
+  line-height: 1.6em;
+  margin-right: 15px;
+  text-align: center;
+  
+}
+
+#portafolio img{
+	margin: 100px 20px;
+}
+
+#portafolio_flecha{
+	height: 46px;
+	width: 57px;
+	position: absolute;
+	top: 1430px;
+	right: 10px;
 }
 
 
-#main{
-	height: 500px;
-	background-color: black;
-	color: yellow;
-}
-
-#main p{
-	margin-top: 150px;
-}
-
-#animate1{
-	color: white;
-}
-
-
-footer{
-	height: 500px;
-	background-color: yellow;
-}

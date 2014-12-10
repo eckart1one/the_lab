@@ -74,8 +74,9 @@
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum provident delectus nesciunt possimus at quisquam rerum beatae quae necessitatibus dolorem ab reiciendis consequatur molestiae unde perspiciatis nihil, iusto neque nisi.
 						</p>
 					</div>
+					<div id="portafolio"><img src="images/botones/conoce.png" alt=""></div>
+					<div id="portafolio_flecha"><img src="images/botones/flecha_derecha.png" alt=""></div>
 				
-					<div class="espacio"></div>
 					<nav class="next-prev">
 						<a class="prev manned-flight" href="#manned-flight">Prev</a>
 						<hr />
@@ -111,30 +112,33 @@
 <!-- articulo couetanos de ti -->
 				<article id="about">
 					<header>
-						
+						<img class="titulo" id="cuentanos" src="images/cuentanos/cuentanos_algo.png"/>
 					</header>
 					<div class="texto_articulo">
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto hic, vero! Accusamus quis nostrum distinctio, iure adipisci laborum consectetur repellat odio expedita, voluptatum placeat sapiente sequi aliquam, quo voluptate vero.</p>
 
-						<div id="contacto">
-							<div>
-								<h2>Tels</h2>
+						<div id="">
+							<div class="contacto">
+								<h1>TELS.</h1>
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis amet, ad officiis, cumque molestiae eius laboriosam. Vero harum esse, sapiente quo magnam enim nam dolores explicabo. Dolorum, iste inventore eos.</p>
 							</div>
-							<div>
-								<h2>Dir</h2>
+							<div class="contacto">
+								<h1>DIR.</h1>
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis amet, ad officiis, cumque molestiae eius laboriosam. Vero harum esse, sapiente quo magnam enim nam dolores explicabo. Dolorum, iste inventore eos.</p>
 							</div>
-							<div>
-								<h2>Mail</h2>
+							<div class="contacto">
+								<h1>MAIL.</h1>
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis amet, ad officiis, cumque molestiae eius laboriosam. Vero harum esse, sapiente quo magnam enim nam dolores explicabo. Dolorum, iste inventore eos.</p>
 							</div>
-							<div>
-								<h2>Video</h2>
+							<div class="contacto">
+								<h1>VIDEO.</h1>
 								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis amet, ad officiis, cumque molestiae eius laboriosam. Vero harum esse, sapiente quo magnam enim nam dolores explicabo. Dolorum, iste inventore eos.</p>
 							</div>
 						</div>
 					</div>
+
+						<div class="espacio"></div>
+						<div class="espacio"></div>
 					<nav class="next-prev">
 						<a class="prev english-channel" href="#english-channel">Prev</a>
 						<hr />
@@ -160,26 +164,28 @@
 				<img class="thumb" id="pinza_1" src="images/ayudamos/pinza_1.png"/>
 				<img class="thumb" id="pinza_2" src="images/ayudamos/pinza_2.png"/>
 				<img class="thumb" id="lapiz_madera" src="images/ayudamos/lapiz_madera.png"/>
-				
-				<!--<img class="thumb" id="tapa" src="images/ayudamos/diseñamos.png"/>
-				<img class="thumb" id="tapa" src="images/ayudamos/investigamos.png"/>
-				 <img class="thumb" id="tapa" src="images/ayudamos/desarrollamos.png"/>-->
+			<div id="bg4"> 
+				<img class="thumb" id="sobre" src="images/cuentanos/sobre.png"/>
 			</div>
-			<!-- <div id="bg4"> 
-				<img class="thumb" id="tapa" src="images/cuentanos/cuentanos_algo.png"/>
-				<img class="thumb" id="tapa" src="images/cuentanos/sobre.png"/>
-			</div> -->
-			rigth
+
+
 <script type="text/javascript">
 	$(document).ready(function(){
 		$('#primary').hide();
 		$('#branding').hide();
+		$('#portafolio').hide();
 	});
 	/* Scroll event handler */
     $(window).bind('scroll',function(e){
     	parallaxScroll();
 		// redrawDotNav();
 
+    });
+
+    $('#portafolio_flecha').hover(function(){
+    	$('#portafolio').show(500);
+    },function(){
+    	$('#portafolio').hide(1500);
     });
 	/* Scroll the background layers */
 	function parallaxScroll()
@@ -194,6 +200,11 @@
 		$('#lapiz_madera').css('left',(-300+(scrolled*.25))+'px');
 		$('#pinza_2').css('left',(-300+(scrolled*.25))+'px');
 		$('#pinza_1').css('left',(-300+(scrolled*.25))+'px');
+		
+		
+		$('#sobre').css('top',(4000-(scrolled*.25))+'px');
+		$('#cuentanos').css('top',(50-(scrolled*.5))+'px');
+
 		if(scrolled>1000){
 			$('#primary').show(500);
 			$('#branding').show(500);
@@ -220,6 +231,9 @@
 
 
 </script>
+
+
+
 		</div>
 	</body>
 
