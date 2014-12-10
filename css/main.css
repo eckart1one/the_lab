@@ -46,7 +46,7 @@ html {
 body {
 	background: #000000;
 	overflow-x: hidden;
-	height: 4000px;
+	height: 4550px;
 	line-height: 1.5;
 	color: #000;
 	font-size: 14px;
@@ -55,7 +55,7 @@ body {
 
 
 h1 {
-	font-size: 30px;
+	color: #21a97e;
 }
 
 a, a:link,
@@ -150,14 +150,13 @@ nav.next-prev {
 margin: 20px 0 0 0;
 	}
 	a.prev,
-	a.next_b,a.next_y {
+	a.next {
 		display: block;
-		width: 57px;
-		height: 45px;
+		width: 15px;
+		height: 11px;
 		text-indent: -9999px;
-		z-index: 10;
 		}
-/*	a.prev {
+	a.prev {
 		margin: 0 auto 5px auto;
 		background: transparent url('../images/scroll-arrow-up.png') 0 0 no-repeat;
 		
@@ -165,17 +164,13 @@ margin: 20px 0 0 0;
 		a.prev:hover {
 			background: transparent url('../images/scroll-arrow-up.png') 0 -11px no-repeat;
 				}
-*/	a.next_b {
-		margin: 5px auto 5px auto;
-		background: transparent url('../images/botones/scroll-arrow-down_b.png') no-repeat;
+	a.next {
+		margin: 5px auto 0 auto;
+		background: transparent url('../images/scroll-arrow-down.png') -1px 0 no-repeat;
 		}
-	a.next_y{
-		margin: 5px auto 5px auto;
-		background: transparent url('../images/botones/scroll-arrow-down_y.png') no-repeat;
-	} 	
-	/*	a.next:hover {
+		a.next:hover {
 			background: transparent url('../images/scroll-arrow-down.png') -1px -11px no-repeat;
-			}		*/
+			}		
 
 /*estilos de loa articulos*/
 
@@ -349,62 +344,15 @@ margin: 20px 0 0 0;
 }
 /*parte del contacto */
 
-.contacto{
+#contacto{
+
+}
+
+#contacto div{
 	float: left;
-	width: 200px;
-	font-family: 'PT Sans', sans-serif;
-	height: 700;
-	letter-spacing: 1px;
-	margin: 0px 20px 0px 20px
+	background: white;
+	border:solid black 1px;
 }
-
-.titulo{
-margin: 50px auto;
-margin-bottom: 120px;
-}
-
-#sobre{
-	position:absolute;
- 	top:3200px;
- 	left:25%;
-}
-
-/*boton portafolio*/
-#portafolio{
-	height: 300px;
-	width: 300px;
-	position: absolute;
-	top: 1330px;
-	right: -120px;
-
-
-  	background: yellow;
-   border-radius: 150px;
-  -moz-border-radius: 150px;
-  -webkit-border-radius: 150px;
-  color: #ffffff;
-  display: inline-block;
-  font-weight: bold;
-  line-height: 1.6em;
-  margin-right: 15px;
-  text-align: center;
-  
-}
-
-#portafolio img{
-	margin: 100px 20px;
-}
-
-#portafolio_flecha{
-	height: 46px;
-	width: 57px;
-	position: absolute;
-	top: 1430px;
-	right: 10px;
-}
-
-
-
 
 /*
 
