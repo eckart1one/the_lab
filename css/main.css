@@ -391,6 +391,7 @@ margin-bottom: 120px;
 }
 
 #portafolio img{
+	z-index: 5;
 	margin: 100px 20px;
 }
 
@@ -398,8 +399,21 @@ margin-bottom: 120px;
 	height: 46px;
 	width: 57px;
 	position: absolute;
-	top: 1430px;
+	top: 1380px;
 	right: 10px;
+	z-index: 2;
 }
 
 
+<<<<<<< HEAD
+=======
+/*elementos a no mostrar*/
+#primary,#branding,#portafolio{
+	display: none;
+}
+
+
+
+
+
+>>>>>>> developer
