@@ -46,7 +46,7 @@ html {
 body {
 	background: #000000;
 	overflow-x: hidden;
-	height: 4000px;
+	height: 4550px;
 	line-height: 1.5;
 	color: #000;
 	font-size: 14px;
@@ -392,6 +392,7 @@ margin-bottom: 120px;
 }
 
 #portafolio img{
+	z-index: 5;
 	margin: 100px 20px;
 }
 
@@ -399,71 +400,18 @@ margin-bottom: 120px;
 	height: 46px;
 	width: 57px;
 	position: absolute;
-	top: 1430px;
+	top: 1380px;
 	right: 10px;
+	z-index: 2;
 }
 
 
-
-
-/*
-
-
-
-#content article:nth-child(odd) {
-	background: black; 
-	border-top: 1px solid #DCDCDC;
-} 
-
-#manned-flight{
-	background-color: 
+/*elementos a no mostrar*/
+#primary,#branding,#portafolio{
+	display: none;
 }
 
 
 
 
 
-
-
-#cuaderno{
-	position:absolute;
- 	top:30px;
- 	left:520px;
-	width: 100px;
- 	height: 200px;
- 
-}
-
-.spacer{
-	height: 100px;
-}
-
-
-#lapiz{
-	position:absolute;
- 	top:300px;
- 	left:620px;
-	width: 300px;
- 	height: 100px;
-}
-
-
-#main{
-	height: 500px;
-	background-color: black;
-	color: yellow;
-}
-
-#main p{
-	margin-top: 150px;
-}
-
-#animate1{
-	color: white;
-}
-
-
-footer{
-	height: 500px;
-	background-color: yellow;
-}
