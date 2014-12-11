@@ -55,7 +55,6 @@ body {
 
 
 h1 {
-	/*color: #21a97e;*/
 	font-size: 30px;
 }
 
@@ -151,13 +150,14 @@ nav.next-prev {
 margin: 20px 0 0 0;
 	}
 	a.prev,
-	a.next {
+	a.next_b,a.next_y {
 		display: block;
-		width: 15px;
-		height: 11px;
+		width: 57px;
+		height: 45px;
 		text-indent: -9999px;
+		z-index: 10;
 		}
-	a.prev {
+/*	a.prev {
 		margin: 0 auto 5px auto;
 		background: transparent url('../images/scroll-arrow-up.png') 0 0 no-repeat;
 		
@@ -165,13 +165,17 @@ margin: 20px 0 0 0;
 		a.prev:hover {
 			background: transparent url('../images/scroll-arrow-up.png') 0 -11px no-repeat;
 				}
-	a.next {
-		margin: 5px auto 0 auto;
-		background: transparent url('../images/scroll-arrow-down.png') -1px 0 no-repeat;
+*/	a.next_b {
+		margin: 5px auto 5px auto;
+		background: transparent url('../images/botones/scroll-arrow-down_b.png') no-repeat;
 		}
-		a.next:hover {
+	a.next_y{
+		margin: 5px auto 5px auto;
+		background: transparent url('../images/botones/scroll-arrow-down_y.png') no-repeat;
+	} 	
+	/*	a.next:hover {
 			background: transparent url('../images/scroll-arrow-down.png') -1px -11px no-repeat;
-			}		
+			}		*/
 
 /*estilos de loa articulos*/
 
@@ -343,9 +347,6 @@ margin: 20px 0 0 0;
 #teclado img{
 	margin: 0px auto;
 }
-
-
-
 /*parte del contacto */
 
 .contacto{
@@ -405,8 +406,6 @@ margin-bottom: 120px;
 }
 
 
-<<<<<<< HEAD
-=======
 /*elementos a no mostrar*/
 #primary,#branding,#portafolio{
 	display: none;
@@ -416,4 +415,3 @@ margin-bottom: 120px;
 
 
 
->>>>>>> developer

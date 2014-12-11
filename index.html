@@ -4,15 +4,32 @@
 	<meta charset="UTF-8">
 	<title>The Lab</title>
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<script type="text/javascript" src="js/_dependent/greensock/TweenMax.min.js"></script>
+	
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
 
 	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
-	<script type="text/javascript" src="js/jquery.scrollmagic.js"></script>
-	<script type="text/javascript" src="js/jquery.scrollmagic.min.js"></script>
-	<script type="text/javascript" src="js/jquery.scrollmagic.debug.js"></script>
 
 </head>
 	<body>
+		<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '586620461375320',
+      xfbml      : true,
+      version    : 'v2.2'
+    });
+
+    // ADD ADDITIONAL FACEBOOK CODE HERE
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
 <!-- contenedor principal -->
 		<div id="wrapper">
 			<!-- barra de branding o logo -->
@@ -67,7 +84,7 @@
 						<div class="espacio"></div>
 						<div class="espacio"></div>
 					</header>
-					<div class="texto_articulo">
+					<div class="texto_articulo" id="confiar_articulo">
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum provident delectus nesciunt possimus at quisquam rerum beatae quae necessitatibus dolorem ab reiciendis consequatur molestiae unde perspiciatis nihil, iusto neque nisi.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum provident delectus nesciunt possimus at quisquam rerum beatae quae necessitatibus dolorem ab reiciendis consequatur molestiae unde perspiciatis nihil, iusto neque nisi.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum provident delectus nesciunt possimus at quisquam rerum beatae quae necessitatibus dolorem ab reiciendis consequatur molestiae unde perspiciatis nihil, iusto neque nisi.
 						<br><br>
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum provident delectus nesciunt possimus at quisquam rerum beatae quae necessitatibus dolorem ab reiciendis consequatur molestiae unde perspiciatis nihil, iusto neque nisi.
@@ -76,11 +93,11 @@
 					</div>
 					<div id="portafolio"><img src="images/botones/conoce.png" alt=""></div>
 					<div id="portafolio_flecha"><img src="images/botones/flecha_derecha.png" alt=""></div>
-				
+					<div class="espacio"></div>
 					<nav class="next-prev">
-						<a class="prev manned-flight" href="#manned-flight">Prev</a>
-						<hr />
-						<a class="next english-channel" href="#english-channel">Next</a>
+						<!-- <a class="prev manned-flight" href="#manned-flight">Prev</a>
+						<hr /> -->
+						<a class="next_y english-channel" href="#english-channel">Next</a>
 					</nav>
 				</article>
 <!-- articulo como ayudamos -->
@@ -104,9 +121,9 @@
 					<div class="espacio"></div>
 					<div class="espacio_medio"></div>
 					<nav class="next-prev">
-						<a class="prev frameless-parachute" href="#frameless-parachute">Prev</a>
-						<hr />
-						<a class="next about" href="#about">Next</a>
+						<!-- <a class="prev frameless-parachute" href="#frameless-parachute">Prev</a>
+						<hr /> -->
+						<a class="next_b about" href="#about">Next</a>
 					</nav>
 				</article>
 <!-- articulo couetanos de ti -->
@@ -141,7 +158,7 @@
 						<div class="espacio"></div>
 					<nav class="next-prev">
 						<a class="prev english-channel" href="#english-channel">Prev</a>
-						<hr />
+						<!-- <hr /> -->
 					</nav>
 				</article>
 			</div>
@@ -164,11 +181,12 @@
 				<img class="thumb" id="pinza_1" src="images/ayudamos/pinza_1.png"/>
 				<img class="thumb" id="pinza_2" src="images/ayudamos/pinza_2.png"/>
 				<img class="thumb" id="lapiz_madera" src="images/ayudamos/lapiz_madera.png"/>
+				
+			</div>
 			<div id="bg4"> 
 				<img class="thumb" id="sobre" src="images/cuentanos/sobre.png"/>
 			</div>
-
-
+			rigth
 <script type="text/javascript">
 	$(document).ready(function(){
 		
@@ -230,9 +248,6 @@
 
 
 </script>
-
-
-
 		</div>
 	</body>
 
