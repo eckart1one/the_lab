@@ -56,12 +56,6 @@ body {
 
 h1 {
 	font-size: 30px;
-	font-family: 'Cookie', Arial,sans-serif;;
-}
-
-p{
-	font-size: 14px;
-	font-family: 'PT Sans', sans-serif;
 }
 
 a, a:link,
@@ -244,8 +238,8 @@ margin: 20px 0 0 0;
 
 #lapiz {
 		position: absolute;
-		top:0px;
-		left:0%;
+		top:663px;
+		left:27%;
 }
 
 #tapa{
@@ -332,8 +326,7 @@ margin: 20px 0 0 0;
  	float:left;
  	width:308px;
  	height: 250px;
- 	margin: 31px 15px 0px 15px;
-
+ 	margin: 0px 15px 0px 15px;
 
 }
 
@@ -347,7 +340,7 @@ margin: 20px 0 0 0;
  	float:left;
  	width:410px;
  	height: 250px;
- 	margin: 34px 0px 0px 15px;
+ 	margin: 0px 0px 0px 15px;
  	
 }
 

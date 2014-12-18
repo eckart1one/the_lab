@@ -6,12 +6,30 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	
 	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
 
 	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
 
 </head>
 	<body>
+		<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '586620461375320',
+      xfbml      : true,
+      version    : 'v2.2'
+    });
+
+    // ADD ADDITIONAL FACEBOOK CODE HERE
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
 <!-- contenedor principal -->
 		<div id="wrapper">
 			<!-- barra de branding o logo -->
@@ -67,7 +85,6 @@
 						<div class="espacio"></div>
 					</header>
 					<div class="texto_articulo" id="confiar_articulo">
-						
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum provident delectus nesciunt possimus at quisquam rerum beatae quae necessitatibus dolorem ab reiciendis consequatur molestiae unde perspiciatis nihil, iusto neque nisi.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum provident delectus nesciunt possimus at quisquam rerum beatae quae necessitatibus dolorem ab reiciendis consequatur molestiae unde perspiciatis nihil, iusto neque nisi.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum provident delectus nesciunt possimus at quisquam rerum beatae quae necessitatibus dolorem ab reiciendis consequatur molestiae unde perspiciatis nihil, iusto neque nisi.
 						<br><br>
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum provident delectus nesciunt possimus at quisquam rerum beatae quae necessitatibus dolorem ab reiciendis consequatur molestiae unde perspiciatis nihil, iusto neque nisi.
@@ -147,8 +164,8 @@
 			</div>
 			<div id="bg1">
 				<img class="thumb" id="logo" src="images/header/logo_the_lab.png"/>
+				<img class="thumb" id="lapiz" src="images/header/lapiz.png"/>
 				<img class="thumb" id="moleskin" src="images/header/moleskin.png"/>
-				<img class="thumb" id="lapiz" src="images/header/lapiz_1.png"/>
 				<img class="thumb" id="mouse" src="images/header/mouse.png"/>	
 				<img class="thumb" id="plumon" src="images/header/plumon.png"/>	
 				<img class="thumb" id="tabla" src="images/header/tabla.png"/>	
@@ -191,15 +208,14 @@
 	function parallaxScroll()
 	{
 		var scrolled = $(window).scrollTop();
-		$('#mouse').css('top',(300+(scrolled*.2))+'px');
-		$('#lapiz').css('top',(300-(scrolled*1))+'px');
+		$('#mouse').css('top',(300-(scrolled*.25))+'px');
+		$('#lapiz').css('top',(300-(scrolled*.5))+'px');
 		$('#tapa').css('top',(700-(scrolled*2))+'px');
 		$('#logo').css('top',(180+(scrolled*.35))+'px');
 		$('#brujula').css('left',(1200-(scrolled*.35))+'px');
 		$('#lentes').css('left',(-300+(scrolled*.25))+'px');
-		// como te ayudamos 
-		$('#lapiz_madera').css('left',(1100-(scrolled*.25))+'px');
-		$('#pinza_2').css('left',(-900+(scrolled*.5))+'px');
+		$('#lapiz_madera').css('left',(-300+(scrolled*.25))+'px');
+		$('#pinza_2').css('left',(-300+(scrolled*.25))+'px');
 		$('#pinza_1').css('left',(-300+(scrolled*.25))+'px');
 		
 		
