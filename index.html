@@ -74,8 +74,8 @@
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum provident delectus nesciunt possimus at quisquam rerum beatae quae necessitatibus dolorem ab reiciendis consequatur molestiae unde perspiciatis nihil, iusto neque nisi.
 						</p>
 					</div>
-					<div id="portafolio"><img src="images/botones/conoce.png" alt=""></div>
-					<div id="portafolio_flecha"><img src="images/botones/flecha_derecha.png" alt=""></div>
+					<div id="portafolio"><a href="portafolio.html"><img src="images/botones/conoce.png" alt=""></a></div>
+					<div id="portafolio_flecha"><a href="portafolio.html"><img src="images/botones/flecha_derecha.png" alt=""></a></div>
 					<div class="espacio"></div>
 					<nav class="next-prev">
 						<!-- <a class="prev manned-flight" href="#manned-flight">Prev</a>
@@ -96,9 +96,9 @@
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, ea magni tempora repellendus quod harum labore soluta consectetur dicta dolores suscipit sit, perspiciatis fugiat eaque architecto consequuntur et vitae accusamus.</p>
 						<br><br>	
 						<div class="tre_columnas">
-							<div class="animacion_icono" id="pantones"> <img class="thumb"  src="images/ayudamos/pantone.png"/></div>
-							<div class="animacion_icono" id="lupa">		<img class="thumb"  src="images/ayudamos/lupa.png"/></div>
-							<div class="animacion_icono" id="teclado"> 	<img class="thumb"  src="images/ayudamos/teclado.png"/> </div>
+							<div class="animacion_icono" id="pantones"><a href="portafolio.html"> <img class="thumb"  src="images/ayudamos/pantone.png"/></a></div>
+							<div class="animacion_icono" id="lupa">	<a href="portafolio.html"> 	<img class="thumb"  src="images/ayudamos/lupa.png"/></a></div>
+							<div class="animacion_icono" id="teclado"> <a href="portafolio.html"> 	<img class="thumb"  src="images/ayudamos/teclado.png"/></a></div>
 						</div>
 					</div>
 					<div class="espacio"></div>
@@ -148,7 +148,7 @@
 			<div id="bg1">
 				<img class="thumb" id="logo" src="images/header/logo_the_lab.png"/>
 				<img class="thumb" id="moleskin" src="images/header/moleskin.png"/>
-				<img class="thumb" id="lapiz" src="images/header/lapiz_1.png"/>
+				<img class="thumb" id="lapiz" src="images/header/lapiz.png"/>
 				<img class="thumb" id="mouse" src="images/header/mouse.png"/>	
 				<img class="thumb" id="plumon" src="images/header/plumon.png"/>	
 				<img class="thumb" id="tabla" src="images/header/tabla.png"/>	
@@ -216,12 +216,12 @@
 		}
 		// animacion de los iconos de ayudamos
 		$('.animacion_icono').hover(function(){
-			$(this).children().stop(true).animate({
+			$(this).children().children().stop(true).animate({
 				'margin-top': -100},500,function(){
 					//fin animacion
 				});
 		},function(){
-			$(this).children().stop(true).animate({
+			$(this).children().children().stop(true).animate({
 				'margin-top': 0
 			},500,function(){
 				//fin de la animacion
