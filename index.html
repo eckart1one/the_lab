@@ -3,7 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<title>The Lab</title>
+	<meta name"viewport" content="width=divice-width">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
 	
 	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
@@ -15,9 +17,9 @@
 <!-- contenedor principal -->
 		<div id="wrapper">
 			<!-- barra de branding o logo -->
-			<header id="branding">
-				<h1>The lab</h1>
-			</header>
+			<div id="branding">
+				<h1><a href="index.html"><img src="images/icononavegacion.ico" alt="The Lab"></a></h1>
+			</div>
 
 <!-- barra de navegacion	 -->
 			<nav id="primary">
@@ -138,11 +140,13 @@
 					</div>
 
 						<div class="espacio"></div>
-						<div class="espacio"></div>
 					<nav class="next-prev">
 						<a class="prev english-channel" href="#english-channel">Prev</a>
 						<!-- <hr /> -->
 					</nav>
+				</article>
+				<article id="rede">
+					<center><h1>Redes Sociales</h1></center>
 				</article>
 			</div>
 			<div id="bg1">
@@ -169,7 +173,7 @@
 			<div id="bg4"> 
 				<img class="thumb" id="sobre" src="images/cuentanos/sobre.png"/>
 			</div>
-			rigth
+			
 <script type="text/javascript">
 	$(document).ready(function(){
 		
@@ -191,17 +195,48 @@
 	function parallaxScroll()
 	{
 		var scrolled = $(window).scrollTop();
+
+		// valores que se mueven en top
 		$('#mouse').css('top',(300+(scrolled*.2))+'px');
 		$('#lapiz').css('top',(300-(scrolled*1))+'px');
 		$('#tapa').css('top',(700-(scrolled*2))+'px');
 		$('#logo').css('top',(180+(scrolled*.35))+'px');
-		$('#brujula').css('left',(1200-(scrolled*.35))+'px');
-		$('#lentes').css('left',(-300+(scrolled*.25))+'px');
-		// como te ayudamos 
-		$('#lapiz_madera').css('left',(1100-(scrolled*.25))+'px');
-		$('#pinza_2').css('left',(-900+(scrolled*.5))+'px');
-		$('#pinza_1').css('left',(-300+(scrolled*.25))+'px');
 		
+		if ($(window).width() < 1500 && $(window).width() > 1200) {  
+			console.log('valores 1500');
+	        $('#brujula').css('left',(1400-(scrolled*.35))+'px');
+			$('#lentes').css('left',(-200+(scrolled*.25))+'px');
+			// como te ayudamos 
+			$('#lapiz_madera').css('left',(1100-(scrolled*.25))+'px');
+			$('#pinza_2').css('left',(-900+(scrolled*.5))+'px');
+			$('#pinza_1').css('left',(-300+(scrolled*.25))+'px');
+		
+
+       }     
+
+       	if ($(window).width() < 1200 && $(window).width() > 800) {  
+
+       		console.log('valores 1024');
+	        $('#brujula').css('left',(1200-(scrolled*.35))+'px');
+			$('#lentes').css('left',(-300+(scrolled*.25))+'px');
+			// como te ayudamos 
+			$('#lapiz_madera').css('left',(1600-(scrolled*.25))+'px');
+			$('#pinza_2').css('left',(-900+(scrolled*.5))+'px');
+			$('#pinza_1').css('left',(-300+(scrolled*.25))+'px');
+       }     
+		
+
+       	if ($(window).width() < 800 ) {  
+
+       		console.log('valores 1024');
+	        $('#brujula').css('left',(1000-(scrolled*.35))+'px');
+			$('#lentes').css('left',(-300+(scrolled*.25))+'px');
+			// como te ayudamos 
+			$('#lapiz_madera').css('left',(1000-(scrolled*.25))+'px');
+			$('#pinza_2').css('left',(-900+(scrolled*.5))+'px');
+			$('#pinza_1').css('left',(-300+(scrolled*.25))+'px');
+       }     
+
 		
 		$('#sobre').css('top',(4000-(scrolled*.25))+'px');
 		$('#cuentanos').css('top',(50-(scrolled*.5))+'px');

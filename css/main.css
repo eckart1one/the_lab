@@ -101,6 +101,7 @@ hr {
 
 #wrapper {
 	position: relative;
+	margin: 0 auto;
 }
 #branding {
 	width: 100%;
@@ -316,8 +317,9 @@ margin: 20px 0 0 0;
 #pantones {
  	background-image:url(../images/ayudamos/disenamos.png) ;
  	background-repeat: no-repeat;  
+ 	background-size:     250px;
  	float:left;
- 	width:308px;
+ 	width:250px;
  	height: 250px;
  	margin: 0px 15px 0px 0px;
 }
@@ -329,8 +331,9 @@ margin: 20px 0 0 0;
 #lupa {
 	background-image:url(../images/ayudamos/investigamos.png); 
 	background-repeat: no-repeat;
+	background-size:     250px;
  	float:left;
- 	width:308px;
+ 	width:250px;
  	height: 250px;
  	margin: 31px 15px 0px 15px;
 
@@ -344,8 +347,9 @@ margin: 20px 0 0 0;
 #teclado {
 	background-image:url(../images/ayudamos/desarrollamos.png); 
 	background-repeat: no-repeat;
+	background-size:     250px;
  	float:left;
- 	width:410px;
+ 	width:250px;
  	height: 250px;
  	margin: 34px 0px 0px 15px;
  	
