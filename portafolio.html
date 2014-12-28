@@ -22,6 +22,92 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
     <style type="text/css">
+	@media screen and (max-width:2024px){
+		#portafolio{
+			height: 2400px;
+		}
+
+		#sobre{
+		 	top:4500px;
+		}
+
+	}
+	@media screen and (max-width:1624px){
+		#portafolio{
+			height: 2100px;
+		}
+		#sobre{
+		 	top:4050px;
+		}
+
+	}
+	@media screen and (max-width:1224px){
+		#header{
+			height: 600px;
+		}
+
+		#lapiz_portafolio{
+			top: 500px;
+		}
+		#portafolio{
+			height: 3600;
+		}
+		#sobre{
+		 	top:3600px;
+		}
+
+	}
+	@media screen and (max-width:995px){
+		#header{
+			height: 600px;
+		}
+
+		#lapiz_portafolio{
+			top: 500px;
+		}
+		#portafolio{
+			height: 1500px;
+		}
+
+		#sobre{
+		 	top:3000px;
+		}
+	}
+
+    /*responsive designed*/
+    @media screen and (max-width:768px){
+		#header{
+			height: 400px;
+		}
+
+		#lapiz_portafolio{
+			top: 350px;
+		}
+		#portafolio{
+			height: 1150px;
+		}
+		#sobre{
+		 	top:2200px;
+		}
+	}
+
+	/*medida para tablets en vertical*/
+	@media screen and (max-width:400px){
+		#header{
+			height: 250px;
+		}
+
+		#lapiz_portafolio{
+			top: 200px;
+		}
+
+		#portafolio{
+			height: 650px;
+		}
+		#sobre{
+		 	top:1300px;
+		}
+	}
     /*generarles++++++++++++++++++++++++*/
     	body{
 			border: 0px;
@@ -29,18 +115,18 @@
 			padding: 0px;
 			background: #000;
     	}
+
+    	.espacio{
+	height: 200px;
+}
 /*secciones++++++++++++++++++++++++++*/
 		.seccion{
 			margin: 0px auto;
 			height: 800px;
+			color: #ffeb00;
+			background: #000000; 
 		}
 		
-		.seccion{
-			 			color: #ffeb00;
-			background: #000000; 
-
-		}
-
 		.seccion:nth-child(even) {
 			color:#000000;
  			background-color: #ffeb00;
@@ -96,9 +182,7 @@ checar como trabaja pero creo que con el auto ya estara bien*/
 			height: auto;
 		}
 		/*portafolio ++++++++++++++++*/
-		#portafolio{
-			height: 1500px;
-		}
+		
 
 		#clean{
 			width: 100%;
@@ -113,35 +197,57 @@ checar como trabaja pero creo que con el auto ya estara bien*/
 			height: auto;	
 		}
 
-		#posh_div{
-			text-align:center;		
-		}
-
-		#posh_div img{
-			width: 60%;
-			height: auto;
-		}
-
-		#posh_div:hover{
-
-		}
-
-		#integral_div{
-			text-align:center;
-			background: #000;
-		}
-
-		#integral_div img{
-			width: 65%;
-			height: auto;
-		}
 		
 
+
+		/*parte del contacto */
+
+.contacto{
+	float: left;
+	width: 200px;
+	font-family: 'PT Sans', sans-serif;
+	height: 700;
+	letter-spacing: 1px;
+	margin: 0px 20px 0px 20px
+}
+
+.titulo{
+margin: 50px auto;
+margin-bottom: 120px;
+}
+
+#sobre{
+	position:absolute;
+ 	top:3200px;
+ 	left:25%;
+}
+
+#cuentanos_portafolio{
+			width: 70%;
+			height: auto;
+		}
+#cuentanos{
+	text-align:center;
+}	
+
+#sobre_portafolio{
+		position: absolute;
+			top: 2500px;
+			left:25%;
+			width: 25%;
+			height: auto;
+}	
+		
+
+		.col-xs-4,.col-xs-8{
+			padding: 0px;
+		}
     </style>
   </head>
   <body>
     <div id="content">
     	<div id="header" class="seccion">
+    		
     		<div id="header_img">
     			<img id="lo_que_hacemos" src="images/portafolio/lo_que_hacemos.png" alt="Lo Que Hacemos">	
     			<img id="lapiz_portafolio" src="images/portafolio/lapiz_portafolio.png" alt="Lo Que Hacemos" width="50%">	
@@ -150,41 +256,59 @@ checar como trabaja pero creo que con el auto ya estara bien*/
     		</div>
     	</div>
     	<div id="portafolio" class="seccion">
-    		<div class="row">
-			  <div class="col-md-8">
-			  	<div class="row">
-			  		<div class="row" id="posh_div">
-			  			 <img id="posh" class="img_re" src="images/portafolio/posh_front.png" onmouseover="this.src='images/portafolio/posh_back.png'" onmouseout="this.src='images/portafolio/posh_front.png'"
-			  			 alt="Posh"> 
-			  		</div>
-			  		<div class="row">
-			  			<div class="col-md-12" id="integral_div">
-			  			
-
-			  				 <img id="posh" class="img_re" src="images/portafolio/integral_front.png" onmouseover="this.src='images/portafolio/integral_back.png'" onmouseout="this.src='images/portafolio/integral_front.png'"
-			  			 alt="Posh"> 
-			  			</div>	
-			  		</div>
-			  	</div>
-			  </div>
-			  <div class="col-md-4">
-
-			  	 <img id="posh" class="img_re" src="images/portafolio/san_front.png" onmouseover="this.src='images/portafolio/san_back.png'" onmouseout="this.src='images/portafolio/san_front.png'"
-			  			 alt="Posh"> 
-			  </div>
+			<div class="row">
+				<div class="col-xs-8">					
+					<img  class="img-responsive" src="images/portafolio/posh_front.png" onmouseover="this.src='images/portafolio/posh_back.png'" onmouseout="this.src='images/portafolio/posh_front.png'"
+					alt="Posh"> 
+				</div>
+				<div class="col-xs-4">
+					<img class="img-responsive" src="images/portafolio/san_front.png" onmouseover="this.src='images/portafolio/san_back.png'" onmouseout="this.src='images/portafolio/san_front.png'"
+					alt="Torre San Bernardo"> 
+				</div>
 			</div>
 			<div class="row">
-			 
-
-			   <img id="posh" class="img_re" src="images/portafolio/clean_front.png" onmouseover="this.src='images/portafolio/clean_back.png'" onmouseout="this.src='images/portafolio/clean_front.png'"
-			  			 alt="Posh"> 
+					<div class="col-xs-12">
+						<img class="img-responsive" src="images/portafolio/integral_front.png" onmouseover="this.src='images/portafolio/integral_back.png'" onmouseout="this.src='images/portafolio/integral_front.png'"
+						alt="Posh"> 
+					</div>	
 			</div>
-    		
-    		
-    		
-    		
+			<div class="row">
+				<div class="col-xs-12">
+					<img class="img-responsive" src="images/portafolio/clean_front.png" onmouseover="this.src='images/portafolio/clean_back.png'" onmouseout="this.src='images/portafolio/clean_front.png'"
+					alt="Posh"> 
+				</div>
+			</div>
     	</div>
-    	<div id="cuentanos" class="seccion"><h1>cuentanos</h1></div>
+
+    	<div id="cuentanos" class="seccion">
+					
+						<img class="titulo" id="cuentanos_portafolio" src="images/cuentanos/cuentanos_algo.png"/>
+					
+					<div class="texto_articulo">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto hic, vero! Accusamus quis nostrum distinctio, iure adipisci laborum consectetur repellat odio expedita, voluptatum placeat sapiente sequi aliquam, quo voluptate vero.</p>
+
+						<div id="">
+							<div class="contacto">
+								<h1>TELS.</h1>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis amet, ad officiis, cumque molestiae eius laboriosam. Vero harum esse, sapiente quo magnam enim nam dolores explicabo. Dolorum, iste inventore eos.</p>
+							</div>
+							<div class="contacto">
+								<h1>DIR.</h1>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis amet, ad officiis, cumque molestiae eius laboriosam. Vero harum esse, sapiente quo magnam enim nam dolores explicabo. Dolorum, iste inventore eos.</p>
+							</div>
+							<div class="contacto">
+								<h1>MAIL.</h1>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis amet, ad officiis, cumque molestiae eius laboriosam. Vero harum esse, sapiente quo magnam enim nam dolores explicabo. Dolorum, iste inventore eos.</p>
+							</div>
+							<div class="contacto">
+								<h1>VIDEO.</h1>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis amet, ad officiis, cumque molestiae eius laboriosam. Vero harum esse, sapiente quo magnam enim nam dolores explicabo. Dolorum, iste inventore eos.</p>
+							</div>
+						</div>
+					</div>
+
+				<img class="thumb" id="sobre_portafolio" src="images/cuentanos/sobre.png"/>
+    	</div>
     	<div id="social" class="seccion"><h1>social</h1></div>
     </div>
 
@@ -202,8 +326,35 @@ checar como trabaja pero creo que con el auto ya estara bien*/
 			var scrolled = $(window).scrollTop();
 			$('#lapicera').css('top',(100-(scrolled*.4))+'px');
 			$('#lo_que_hacemos').css('top',(100+(scrolled*.2))+'px');
-			$('#lapiz_portafolio').css('top',(600-(scrolled*1))+'px');
+				
+				if($(window).width() > 1224){
+					$('#lapiz_portafolio').css('top',(600-(scrolled*1))+'px');	
+				}else if ($(window).width() < 1224 && $(window).width() > 995 ) {  
+					$('#lapiz_portafolio').css('top',(600-(scrolled*1))+'px');
+				}else if ($(window).width() < 995 && $(window).width() > 768){
+					$('#lapiz_portafolio').css('top',(500-(scrolled*1))+'px');
+				}else if ($(window).width() < 768 && $(window).width() > 400 ){
+					$('#lapiz_portafolio').css('top',(350-(scrolled*1))+'px');
+				}else if ($(window).width() < 400 ){
+					$('#lapiz_portafolio').css('top',(200-(scrolled*1))+'px');
+				}
+
+			
 			$('#plumon_portafolio').css('top',(50+(scrolled*.4))+'px');
+			
+				if($(window).width() > 1624){
+					$('#sobre_portafolio').css('top',(4500-(scrolled*.4))+'px');
+				}else if ($(window).width() < 1624 && $(window).width() > 1224 ) {  
+				$('#sobre_portafolio').css('top',(4050-(scrolled*.4))+'px');
+				}else if ($(window).width() < 1224 && $(window).width() > 995 ) {  
+				$('#sobre_portafolio').css('top',(3600-(scrolled*.4))+'px');
+				}else if ($(window).width() < 995 && $(window).width() > 768){
+					$('#sobre_portafolio').css('top',(3000-(scrolled*.4))+'px');
+				}else if ($(window).width() < 768 && $(window).width() > 400 ){
+					$('#sobre_portafolio').css('top',(2200-(scrolled*.4))+'px');
+				}else if ($(window).width() < 400 ){
+					$('#sobre_portafolio').css('top',(1300-(scrolled*.4))+'px');
+				}
 		}
 
     </script>
